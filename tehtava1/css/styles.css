@@ -1,0 +1,161 @@
+@font-face {
+    font-family: 'OpenSans';
+    src: url('fontit/OpenSans-Regular.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('fontit/OpenSans-Bold.woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('fontit/OpenSans-Italic.woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('fontit/OpenSans-BoldItalic.woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+body {
+   font-family: 'OpenSans', sans-serif;
+   background-color: rgb(205, 216, 223);
+   background-image: url('/images/bg_full_size.jpg');
+   background-attachment: fixed;
+   background-size: cover;
+   background-position: center;
+   overflow-y: scroll;
+}
+
+a {
+    color: rgb(110, 15, 59);
+    text-decoration: none;
+}
+
+nav ul li a {
+    color: rgb(110, 15, 59);
+    display: block;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    border-right: 1px solid rgb(187, 245, 245);
+    border-width: 5px;
+    
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    background-color: rgb(252, 247, 247)
+}
+
+nav ul li:first-child a {
+    border-left: 1px solid rgb(187, 245, 245);
+    border-width: 5px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+header {
+background-color: rgb(187, 245, 245);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none; 
+
+}
+
+main {
+    background-color: rgb(232, 230, 230);
+    padding: 1rem;
+}
+
+footer {
+    background-color: rgb(187, 245, 245);
+    padding: 1rem;
+    color: rgb(69, 6, 99);
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+
+}
+
+.container {
+   max-width: 800px;
+   margin: 0 auto;
+
+}
+
+.img-left {
+    float: left;
+    margin-right: 10px;
+}
+
+.img-1x1 {
+    width: 320px;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+figure {
+    margin: 2rem 0;
+}
+
+figcaption {
+    color: blue;
+    font-style: italic;
+}
+
+.my-table {
+    width: 100%;
+    border-spacing: 0;
+}
+
+.my-table td {
+    padding: .5rem 1rem;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.my-table th{
+    background-color: rgb(187, 245, 245);
+    color: rgb(0, 0, 0);
+    text-align: left;
+    padding: .5rem 1rem;
+    
+    
+}
+
+.my-table tr th:last-child,
+.my-table tr td:last-child {
+    text-align: right;
+}
+
+.my-table tr:nth-child(even) {
+    background-color: rgb(225, 224, 225);
+}
+
+/* tämä on kommentoinita */
+
+.my-table tr:nth-child(odd) {
+    background-color: rgb(175, 174, 176);
+}
+
+.my-table tr:hover {
+    background-color: rgb(187, 245, 245);
+}

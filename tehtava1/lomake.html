@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf.8">
+<title>Lomake - Harjoitussaitti</title>
+<link rel="stylesheet" href="css/styles.css" media="screen">
+</head>
+<body>
+
+        <div class="container">
+
+    <header>
+
+        <nav>
+
+            <ul>
+                <li><a href="index.html">Etusivu</a></li>
+                <li><a href="kuvat.html">Kuvat</a></li>
+                <li><a href="taulukot.html">Taulukot</a></li>
+                <li><a href="lomake.html">Lomake</a></li>
+                <li><a href="videot.html">Videot</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <h1>Lomake</h1>
+
+        <p>Tässä kokeillaan vähän lomakkeen tekemistä</p>
+
+
+        <form action="post-script.php" method="post">
+
+            <p>
+
+            <label for="firstname">Etunimi</label><br>
+            <input type="txt" id="firstname" name="Etunimi" required>
+            
+            </p>
+
+            <p>
+                <label for="lastname">Sukunimi</label><br>
+                <input type="text" id="lastname" name="Sukunimi" required>
+
+            </p>
+
+            <p>
+                <label for="postalcode">Postinumero</label><br>
+                <input type="text" id="postalcode" name="Postinumero" maxlength="5">
+            </p>    
+
+            <p>
+                <label for="email">sähköposti</label><br>
+                <input type="email" id="email" name="Sähköposti" required>
+            </p>
+
+            <p>
+            <label for="tel">Puhelin</label><br>
+            <input type="tel" id="tel" name="Puhelin">
+            </p>
+
+            <p>
+                <label for="message">Viesti</label><br>
+                <textarea name="Viesti" id="message" cols="50" rows="5"></textarea>
+
+            </p>
+
+            <p>
+                <label for="contactmethod">Ottakaa minuun yhteyttä</label><br>
+                <select name="Yhteydenottotapa" id="contactmethod" required>
+                    <option value="">Valitse</option>
+                    <option value="">Puhelimella</option>
+                    <option value="">Savumerkeillä</option>
+                    <option value="">Sähköpostilla</option>
+                    <option value="">Älä ota yhteyttä, olen kaljalla</option>
+                </select>
+
+            </p>
+
+           <button type="submit">Lähetä</button>
+
+           
+
+        </form>
+
+    </main>
+
+        <footer>
+            &copy; 2022 Minä itse
+        </footer>
+
+</div>  <!--/.container-->
+
+
+
+
+</body>
+</html>
